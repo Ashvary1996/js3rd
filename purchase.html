@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purchases</title>
+  <!-- <link rel="stylesheet" href="/unit3_c2/styles/purchase.css">
+   -->
+  <style>
+    #wallet_balance{
+    background-color: teal;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  #purchased_vouchers{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 10px ;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  h1{
+    text-align: center;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- Wallet balence id:- "wallet_balance" (only number). -->
+  <div id="wallet_balance" ></div>
+  <!-- - All the purchased voucher will be appended in div with id as "purchased_vouchers".
+    
+  - The remaining balance will show on the page inside h3 tag with id as "balance" -->
+  <h1>My Vouchers</h1>
+  <div id="purchased_vouchers" > </div>
+  <div>
+
+  </div>
+</body>
+
+</html>
+
+<script src="/unit3_c2/scripts/purchase.js"></script>
+<script>
+
+  
+var storeitem = JSON.parse(localStorage.getItem("purchase")) || [];
+
+function display(storeitem) {
+
+  storeitem.forEach(function (elem) {
+
+    let div = document.createElement("div");
+
+    let image = document.createElement("img");
+    let name = document.createElement("h2");
+    let price = document.createElement("h4");
+
+    image.src = elem.image;
+    name.innerText = elem.name;
+    price.innerText = elem.price;
+
+
+    div.setAttribute("class", "voucher");
+
+
+    div.append(image, name, price)
+    document.getElementById("purchased_vouchers").append(div);
+
+
+  });
+}
+display(storeitem)
+
+
+
+</script>

@@ -1,0 +1,51 @@
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: teal;
+  color: white;
+
+}
+
+a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+
+}
+
+a:hover {
+  color: blue;
+}
+
+#form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: auto;
+  margin-top: 80px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+input {
+  height: 20px;
+  padding: 10px;
+
+}
+
+button {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+button:hover {
+  color: teal;
+  background-color: rgba(191, 183, 183, 0.49);
+}

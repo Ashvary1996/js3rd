@@ -1,0 +1,40 @@
+
+#wallet_balance{
+  background-color: teal;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+#voucher_list{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  gap: 10px ;
+  padding: 10px;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  
+}
+button{
+  font-size: 21px;
+  border-radius: 4px;
+
+}
+button:hover{
+  background-color: teal;
+  color: white;
+}
+.voucher{
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+image{
+  width: 100%;
+  margin-bottom: 10px;
+}
+#myvoucher
+{
+  justify-items: flex-end;
+  font-size: large;
+  background-color: teal;
+  color: white;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <style>
+
+    
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: teal;
+  color: white;
+
+}
+
+a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+
+}
+
+a:hover {
+  color: blue;
+}
+
+#form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: auto;
+  margin-top: 80px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+input {
+  height: 20px;
+  padding: 10px;
+
+}
+
+button {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+button:hover {
+  color: teal;
+  background-color: rgba(191, 183, 183, 0.49);
+}
+
+  </style>
+  <!-- <link rel="stylesheet" href="unit3_c2/styles/main.css"> -->
+</head>
+
+<body>
+  <div id="navbar">
+    <h3>Sign Up</h3>
+    <a href="voucher.html">Purchase Voucher</a>
+  </div>
+
+  <form id="form">
+    <h2>SignUP</h2>
+    <input id="name" type="text" placeholder="Name">
+    <input id="email" type="text" placeholder="E-mail">
+    <input id="address" type="text" placeholder="Address">
+    <input id="amount" type="number" placeholder="Add amount to wallet">
+    <button id="submit">Submit</button>
+
+  </form>
+  <!-- - name input box :- "name"
+  - email input box :- "email"
+  - Address input box :- "address"
+  - Amount input box :- "amount" 
+  - Submit button :- "submit"
+  - The user will be stored with key:- "user"
+  - The input fields should become empty after submitting -->
+</body>
+
+</html>
+<script src="/unit3_c2/scripts/main.js"></script>
